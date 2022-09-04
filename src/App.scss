@@ -1,3 +1,6 @@
+@import "../src/sass/variables.scss";
+@import "../src//sass/mixins.scss";
+
 .App {
   text-align: center;
 }
@@ -14,12 +17,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $bg-color-header;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include alignment;
   font-size: calc(10px + 2vmin);
   color: white;
 }
